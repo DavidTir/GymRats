@@ -1,7 +1,14 @@
 <script>
     import Header from '../../components/header.svelte';
-    import Body from '../../components/body.svelte';
+    import Content from '../../components/profil.svelte';
 </script>
 
 <Header />
-<Body />
+<Content />
+
+
+
+
+
+
+
