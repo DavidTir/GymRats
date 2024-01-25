@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="node.fhstp.cc" id="7014acd3-6077-464f-805d-d52bbf20c96a" port="22" nameFormat="DESCRIPTIVE" username="node-mt221026-10193" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="130effde-8923-4bd5-be09-88a3b8453e06" name="CampusCloud">
+        <fileTransfer rootFolder="/node/Gymrats" accessType="SFTP" host="node.fhstp.cc" port="22" sshConfigId="7014acd3-6077-464f-805d-d52bbf20c96a" sshConfig="node-mt221026-10193@node.fhstp.cc:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

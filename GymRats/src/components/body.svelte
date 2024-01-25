@@ -1,8 +1,16 @@
-<body>
-<div id="content"></div>
-</body>
+<script>
+    import Trainingsblock from "./Trainingsblock.svelte";
+</script>
 
 <style>
+    #title{
+        margin: 100px 0 100px 0;
+    }
+    h1{
+        color: #FFFFFF;
+        text-align: center;
+        vertical-align: center;
+    }
     body{
         background-image: url("https://w.forfun.com/fetch/3b/3be10e704076a6d8608dea14eefea529.jpeg");
     }
@@ -15,3 +23,10 @@
         opacity: 80%;
     }
 </style>
+
+<body>
+<div id="content">
+    <h1 id = 'title'>Deine Trainingspläne: </h1>
+    <Trainingsblock/>
+</div>
+</body>
