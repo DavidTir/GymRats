@@ -1,19 +1,26 @@
+<!-- +page.svelte -->
 
-
-<script context="module">
+<script>
+    import { username } from './userStore';
     import Header from '../../../components/header.svelte';
-    import Content from '../../../components/profil.svelte';
-    import { load } from './+page';
-
-
+    import Profil from '../../../components/profil.svelte';
 </script>
 
 <Header />
+<Profil />
 
-
+<main>
+    {#if $username !== null}
+        <p>{$username}</p>
+    {:else}
+        <p>Lade Benutzerdaten...</p>
+    {/if}
+</main>
 
 <style>
-    h1 {
-        color: black;
+    main{
+        position: absolute;
+        left: 900px;
+        bottom: 405px;
     }
 </style>

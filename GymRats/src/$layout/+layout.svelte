@@ -1,10 +1,10 @@
-// Datei: $layout/layout.svelte
+<!-- Datei: $layout/layout.svelte -->
 <script context="module" lang="ts">
     import type { Load } from '@sveltejs/kit';
 
     export const load: Load = async ({ params, query }) => {
-        // Überprüfe, ob eine gültige Zahl übergeben wurde
-        const userId = params.id;
+        const userId = params.        // Überprüfe, ob eine gültige Zahl übergeben wurde
+            id;
 
         if (!userId || isNaN(Number(userId))) {
             console.error("Ungültige oder fehlende Benutzer-ID in der URL.");
@@ -29,6 +29,9 @@
             },
         };
     };
+
+    // Exportiere die Page-Typdefinition
+    export type { Page } from '@sveltejs/kit';
 </script>
 
 <!-- Hier kann das globale Layout definiert werden -->
