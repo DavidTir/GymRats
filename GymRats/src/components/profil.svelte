@@ -9,7 +9,7 @@
     <br>
     <br>
     <h2>Name</h2>
-    <h2>E-Mail</h2>
+
     <h3>
     <button>User Löschen</button>
         <button>User Updaten</button>
