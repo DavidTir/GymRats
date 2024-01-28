@@ -3,5 +3,5 @@
     import Body from '../../components/body.svelte';
 </script>
 
-<Header />
+
 <Body />

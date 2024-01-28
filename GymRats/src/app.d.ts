@@ -8,6 +8,7 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+	type Theme = 'system' | 'light' | 'dark'
 }
 
 export {};
