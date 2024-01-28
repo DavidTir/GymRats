@@ -2,9 +2,9 @@
 <script context="module" lang="ts">
     import type { Load } from '@sveltejs/kit';
 
-    export const load: Load = async ({ params, query }) => {
-        const userId = params.        // Überprüfe, ob eine gültige Zahl übergeben wurde
-            id;
+    export const load: Load = async ({ params}) => {
+        const userId = params.id;        // Überprüfe, ob eine gültige Zahl übergeben wurde
+
 
         if (!userId || isNaN(Number(userId))) {
             console.error("Ungültige oder fehlende Benutzer-ID in der URL.");

@@ -1,14 +1,17 @@
 <script>
+    import ExcerciseBlock from "./ExcerciseBlock.svelte";
+
     export let trainingName = ""
-    export let toggle = false
+    export let expandToggle = false
 
     function SwitchToggle(){
-        toggle = !toggle
+        expandToggle = !expandToggle;
     }
 </script>
 <style>
 .wrapper{
     padding: 10px;
+    width: 800px;
     background-color: #36393B;
     opacity: 0.6;
     color: white;
@@ -22,18 +25,15 @@
 
 </style>
 
-
-
-
     <div class="wrapper">· {trainingName}
-        {#if toggle}
-            <p>Table</p>
-        {/if}
+        <button on:click={SwitchToggle} >
+            <img src = "Details.png">
+        </button>
     </div>
-    <img style="width: 20px; height: 22.45px; left: 851px; top: 21px; position: absolute" src="https://via.placeholder.com/20x22" />
+{#if expandToggle}
+    <div class = 'wrapper'><ExcerciseBlock  /></div>
+{/if}
 
-    <button on:click={SwitchToggle}>
-        {toggle === true ? 'hide' : 'show'}
-    </button>
+
 
 

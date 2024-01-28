@@ -6,6 +6,7 @@
 <style>
     #title{
         margin: 100px 0 100px 0;
+        text-align: center;
     }
     h1{
         color: #FFFFFF;
@@ -22,6 +23,7 @@
         position: absolute;
         left: 200px;
         opacity: 80%;
+        horiz-align: center;
     }
 </style>
 
