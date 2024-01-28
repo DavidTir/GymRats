@@ -1,5 +1,6 @@
 <script>
     import Trainingsblock from "./Trainingsblock.svelte";
+    export let names = ["test1", "test2", "test3", "test4"];
 </script>
 
 <style>
@@ -27,6 +28,8 @@
 <body>
 <div id="content">
     <h1 id = 'title'>Deine Trainingspläne: </h1>
-    <Trainingsblock/>
+    {#each names as name}
+    <Trainingsblock trainingName={name}/>
+    {/each}
 </div>
 </body>
