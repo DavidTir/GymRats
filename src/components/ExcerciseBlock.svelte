@@ -1,5 +1,6 @@
 <script>
     let excerciseDetails = ['Bench Press', 15, '50kg', 10];
+    import addImage from '$lib/graphics/add.png'
 </script>
 <style>
     .table{
@@ -34,5 +35,5 @@
 {/each}
 </div>
 <button class="add">
-    <img src = "../../Graphics/Icons/Add.png" alt = "Add">
+    <img src = {addImage} alt = "Add">
 </button>
